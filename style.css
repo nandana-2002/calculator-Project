@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.main {
+
+    width: 320px;
+    height: 580px;
+    border-radius: 15px;
+    background-color: rgb(39, 38, 38);
+    margin: auto;
+
+}
+
+.casio {
+    color: white;
+    font-size: 1.5rem;
+    text-align: start;
+    padding-top: 28px;
+    padding-left: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.textarea {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    width: 90%;
+    height: 100px;
+    margin-left: 17px;
+    border-radius: 10px;
+    background-color: rgb(178, 212, 228)
+}
+
+#pre {
+    text-align: end;
+    padding-right: 10px;
+    width: 100%;
+
+    font-size: 25px;
+    background-color: rgb(178, 212, 228);
+    border-style: none;
+}
+
+input {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+
+
+}
+
+button:hover {
+    background-color: rgb(141, 134, 134);
+}
+
+.number {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
