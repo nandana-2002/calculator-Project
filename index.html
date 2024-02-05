@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,80 +8,60 @@
     <link href="./style.css" rel="stylesheet">
 
 </head>
+
 <body>
-    
+
     <h1>
-    CALCULATOR
+        CALCULATOR
     </h1>
     <div class="main">
-    <div>
-    <h1 class="casio">CASIO</h1>
-    </div>
-    <div class="textarea">
-        <input type="text" id="pre" readonly>
-    </div>
-    <div class="numberdiv">
-    <div class="number">
-        <input type="button" value="C" onclick="clearDisplay()"style="background-color: rgb(215, 57, 57);">
-        <input type="button" value="CE" onclick="clearLast()">
-        <input type="button" value="." onclick="addTodisplay('.')">
-        <input type="button" value="%" onclick="addTodisplay('%')">
-    </div>
-    <div class="number">
-        <input type="button" value="1" onclick="addTodisplay('1')">
-        <input type="button" value="2" onclick="addTodisplay('2')">
-        <input type="button" value="3" onclick="addTodisplay('3')">
-        <input type="button" value="*" onclick="addTodisplay('*')">
-    
-    </div>
-    <div class="number">
-        <input type="button" value="4" onclick="addTodisplay('4')">
-        <input type="button" value="5" onclick="addTodisplay('5')">
-        <input type="button" value="6" onclick="addTodisplay('6')">
-        <input type="button" value="-" onclick="addTodisplay('-')">
-    </div>
-    <div class="number">
-        <input type="button" value="7" onclick="addTodisplay('7')">
-        <input type="button" value="8" onclick="addTodisplay('8')">
-        <input type="button" value="9" onclick="addTodisplay('9')">
-        <input type="button" value="+" onclick="addTodisplay('+')">
-    </div>
-    <div class="number">
-        <input type="button" value="0" onclick="addTodisplay('0')">
-        <input type="button" value="00" onclick="addTodisplay('00')">
-        
-        <input type="button" value="="onclick="calculate()" style="background-color: rgb(227, 58, 58);">
-        <input type="button" value="/" onclick="addTodisplay('/')">
-    </div>
-</div>
-    </div>
-    <script>
-        function addTodisplay(value){
-            document.getElementById('pre').value +=value;
-        }
-        function clearDisplay(){
-            document.getElementById('pre').value='';
+        <div>
+            <h1 class="casio">CASIO</h1>
+        </div>
+        <div class="textarea">
+            <input type="text" id="pre" readonly>
+        </div>
+        <div class="numberdiv">
+            <div class="number">
+                <input type="button" value="C" onclick="clearDisplay()" style="background-color: rgb(215, 57, 57);">
+                <input type="button" value="CE" onclick="clearLast()">
+                <input type="button" value="." onclick="addTodisplay('.')">
+                <input type="button" value="%" onclick="addTodisplay('%')">
+            </div>
+            <div class="number">
+                <input type="button" value="1" onclick="addTodisplay('1')">
+                <input type="button" value="2" onclick="addTodisplay('2')">
+                <input type="button" value="3" onclick="addTodisplay('3')">
+                <input type="button" value="*" onclick="addTodisplay('*')">
 
-        }
-        function calculate(){
-            try{
-                var result= eval(document.getElementById('pre').value);
-                document.getElementById('pre').value=result;
-            }
-            catch(error){
-                document.getElementById('pre').value='error';
+            </div>
+            <div class="number">
+                <input type="button" value="4" onclick="addTodisplay('4')">
+                <input type="button" value="5" onclick="addTodisplay('5')">
+                <input type="button" value="6" onclick="addTodisplay('6')">
+                <input type="button" value="-" onclick="addTodisplay('-')">
+            </div>
+            <div class="number">
+                <input type="button" value="7" onclick="addTodisplay('7')">
+                <input type="button" value="8" onclick="addTodisplay('8')">
+                <input type="button" value="9" onclick="addTodisplay('9')">
+                <input type="button" value="+" onclick="addTodisplay('+')">
+            </div>
+            <div class="number">
+                <input type="button" value="0" onclick="addTodisplay('0')">
+                <input type="button" value="00" onclick="addTodisplay('00')">
 
-            }
-        }
-        function clearLast() {
-      var display = document.getElementById('pre');
-      display.value = display.value.slice(0, -1);
-    }
-    </script>
+                <input type="button" value="=" onclick="calculate()" style="background-color: rgb(227, 58, 58);">
+                <input type="button" value="/" onclick="addTodisplay('/')">
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
 
-    
-    
 
-    
+
+
+
 </body>
+
 </html>
